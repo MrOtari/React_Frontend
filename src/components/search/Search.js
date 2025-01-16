@@ -1,5 +1,6 @@
 import MovieCard from '../moviecard/MovieCard'
 import { useState } from 'react'
+import './Search.css'
 
 const Search = ({ search, setSearch, movies, handleSearch }) => {
     const [visible, setVisible] = useState(2)

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Search from '../components/search/Search'
-import { getMovies } from '../services/api'
+import { getMovies } from '../api/api'
 
 const Home = () => {
     const [search, setSearch] = useState('')
@@ -44,6 +44,7 @@ const Home = () => {
                 {error && <p>{error}</p>}
             </div>
         </div>
+        
     )
 }
 
